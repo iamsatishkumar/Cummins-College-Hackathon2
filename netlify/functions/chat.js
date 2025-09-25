@@ -18,10 +18,10 @@ exports.handler = async (event, context) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${OPENROUTER_API_KEY}`
+        'Authorization': "Bearer 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"
       },
       body: JSON.stringify({
-        model: 'deepseek/deepseek-v3.1:free', // Use the free model's slug
+        model: "mistralai/mistral-7b-instruct:free", // Use the free model's slug
         messages: [
           { role: 'system', content: 'You are a helpful assistant for preventive healthcare, disease symptoms, and vaccination schedules. Provide brief, factual information.' },
           { role: 'user', content: message }
