@@ -3,67 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Netlify Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        button {
-            background: #5cb85c;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>AI Healthcare Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website!</h1>
-    </header>
+<div class="chatbot-container">
+    <div class="chatbot-header">AI Healthcare Chatbot</div>
+    <div class="chat-history" id="chat-history">
+        <div class="message bot-message">Hello! I'm an AI assistant. How can I help you today?</div>
+    </div>
+    <div class="chat-input-container">
+        <input type="text" id="user-input" class="chat-input" placeholder="Type a message...">
+        <button id="send-btn" class="send-button">Send</button>
+    </div>
+</div>
 
-    <main>
-        <p>This is a simple static site deployed on Netlify. It uses HTML, CSS, and JavaScript.</p>
-        <button id="myButton">Click Me</button>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
-    
-    <script>
-        document.getElementById('myButton').addEventListener('click', function() {
-            alert('Button was clicked! Your JavaScript is working.');
-        });
-    </script>
+<script src="script.js"></script>
 
 </body>
 </html>
